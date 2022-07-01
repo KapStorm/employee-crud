@@ -1,0 +1,79 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <mat-card class="sm:m-auto w-full md:w-7/12 xl:w-5/12">
+    <mat-card-title>
+      <p class="text-center text-4xl p-5">Create an employee</p>
+    </mat-card-title>
+
+    <mat-card-content>
+      <div class="flex justify-center">
+        <mat-form-field
+          appearance="outline"
+          class="text-lg md:text-base w-full md:w-9/12 lg:w-8/12"
+        >
+          <mat-label>First name</mat-label>
+          <input matInput type="text" formControlName="firstName" />
+        </mat-form-field>
+      </div>
+
+      <div class="flex justify-center">
+        <mat-form-field
+          appearance="outline"
+          class="text-lg md:text-base w-full md:w-9/12 lg:w-8/12"
+        >
+          <mat-label>Last name</mat-label>
+          <input matInput type="text" formControlName="lastName" />
+        </mat-form-field>
+      </div>
+
+      <div class="flex justify-center">
+        <mat-form-field
+          appearance="outline"
+          class="text-lg md:text-base w-full md:w-9/12 lg:w-8/12"
+        >
+          <mat-label>Phone</mat-label>
+          <input
+            matInput
+            type="tel"
+            maxlength="10"
+            formControlName="phone"
+            required
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="flex justify-center">
+        <mat-form-field
+          appearance="outline"
+          class="text-lg md:text-base w-full md:w-9/12 lg:w-8/12"
+        >
+          <mat-label>Email</mat-label>
+          <input matInput type="email" formControlName="email" />
+        </mat-form-field>
+      </div>
+
+      <div class="flex justify-center">
+        <mat-form-field
+          appearance="outline"
+          class="text-lg md:text-base w-full md:w-9/12 lg:w-8/12"
+        >
+          <mat-label>Position</mat-label>
+          <input matInput type="text" formControlName="position" />
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <div class="flex justify-center">
+        <button
+          mat-raised-button
+          color="primary"
+          class="w-full md:w-5/12 text-lg md:text-base"
+          style="padding: 8px"
+          type="submit"
+        >
+          Create
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</form>

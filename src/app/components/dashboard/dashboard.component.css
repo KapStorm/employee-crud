@@ -1,0 +1,14 @@
+button {
+  margin-right: 5px;
+}
+
+.mat-column-firstName,
+.mat-column-lastName,
+.mat-column-email,
+.mat-column-actions {
+  padding: 10px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
